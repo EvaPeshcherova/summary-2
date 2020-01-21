@@ -1,0 +1,93 @@
+:root {
+    box-sizing: border-box;
+    font: 14px "Fira Sans", sans-serif;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 150px 650px;
+    grid-template-rows: 70px 530px;
+    position: fixed;
+    top: 20%;
+    left: 20%;
+}
+
+.header {
+    grid-column: span 2;
+    background-color: #FBD9CA;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.title {
+    font-size: 2em;
+}
+
+.icon {
+    display: block;
+    height: 50px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.created {
+    display: flex;
+}
+
+.header-name {
+    padding-right: 10px;
+}
+
+.card-user {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: darkgoldenrod;
+    color: black;
+    margin: 5px;
+    justify-self: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FBD9CA;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.time-parameters {
+    align-self: center;
+}
+
+.messenger {
+   grid-column: span 2;
+    background-color: #F08365;
+    overflow-y: scroll;
+}
+
+.text {
+    background-color: #F6B096;
+    padding: 10px;
+}
+
+.one-message {
+    display: flex;
+}
+
+.message {
+    padding: 5px 10px;
+}
